@@ -1,0 +1,25 @@
+ratio: 0.1
+dataset_name: cifar10
+target_label: 0
+num_workers: 11
+epoch: 150
+lr: 0.01
+momentum: 0.9
+weight_decay: 0.0005
+prefetch: False
+amp: False
+non_blocking: True
+pin_memory: True
+path: None  # None is a str "None"
+device: 0
+batch: 64
+model: resnet18
+seed: 42
+val_epoch: 1
+# ema_update_every: 100
+
+# enhanced training
+enhance: 0.05
+
+defaults:
+  - attack: refool
